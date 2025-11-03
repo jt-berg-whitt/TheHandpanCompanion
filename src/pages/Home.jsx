@@ -6,6 +6,7 @@ export default function Home(){
       <h2 id="home-heading">Welcome to The Handpan Companion's home page!</h2>
       <p>Some text.</p>
 
+
       <h3>Quick links</h3>
       <ul>
         <li><strong>About</strong> — Get to know the author and story behind the project</li>
