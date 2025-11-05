@@ -11,7 +11,7 @@ export default function Book({ bookSidebarOpen, setBookSidebarOpen }) {
             <div className="index-list">
               <a href="#title">Introduction</a>
               <a href="#chapter2">Chapter 1 — The History of the Handpan</a>
-              <a href="#chapter3">Chapter 2— Conflict</a>
+              <a href="#chapter3">Chapter 2 — Conflict</a>
               <a href="#chapter4">Chapter 3 — </a>
               <a href="#chapter4">Chapter 4 — </a>
               <a href="#chapter4">Chapter 5 — </a>

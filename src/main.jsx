@@ -7,7 +7,10 @@ import "./styles.css";
 // .
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/thehandpan-companion-website/">
+    <BrowserRouter
+      basename={
+        process.env.NODE_ENV === "production" ? "/TheHandpanCompanion/" : "/"
+      }>
       <App />
     </BrowserRouter>
   </React.StrictMode>

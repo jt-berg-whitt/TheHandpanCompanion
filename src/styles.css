@@ -280,7 +280,6 @@ li {
 
 /* Highlight the element when targeted by an anchor */
 .app-content :target {
-  box-shadow: 0 0 0 4px var(--accent-dim);
   border-radius: 6px;
   transition: box-shadow 280ms ease;
   background: linear-gradient(90deg, rgba(212, 175, 55, 0.04), transparent 70%);
