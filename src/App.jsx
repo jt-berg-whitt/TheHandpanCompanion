@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+  Navigate,
+} from "react-router-dom";
 import WebFont from "webfontloader";
 
 import Header from "./components/Header";
@@ -38,39 +44,53 @@ export default function App() {
     <div className="app">
       <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <main className="app-content">
-        <Routes>
-          <Route path="/home" element={<Navigate to="/" replace />} />
-          <Route
-            path="/"
-            element={
-              <Home sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <About
-                sidebarOpen={sidebarOpen}
-                setSidebarOpen={setSidebarOpen}
-              />
-            }
-          />
-          <Route
-            path="/book"
-            element={
-              <Book sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            }
-          />
-          <Route
-            path="/interviews"
-            element={
-              <Interviews
-                sidebarOpen={sidebarOpen}
-                setSidebarOpen={setSidebarOpen}
-              />
-            }
-          />
-        </Routes>
+        <Router basename="/TheHandpanCompanion">
+          <Routes>
+            {/* simple catch in case the person types "home" in the URL manually */}
+            <Route
+              path="/home"
+              element={<Navigate to="/" replace />}
+              sidebarOpen={sidebarOpen}
+              setSidebarOpen={setSidebarOpen}
+            />
+            <Route
+              path="/"
+              element={
+                <Home
+                  sidebarOpen={sidebarOpen}
+                  setSidebarOpen={setSidebarOpen}
+                />
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <About
+                  sidebarOpen={sidebarOpen}
+                  setSidebarOpen={setSidebarOpen}
+                />
+              }
+            />
+            <Route
+              path="/book"
+              element={
+                <Book
+                  sidebarOpen={sidebarOpen}
+                  setSidebarOpen={setSidebarOpen}
+                />
+              }
+            />
+            <Route
+              path="/interviews"
+              element={
+                <Interviews
+                  sidebarOpen={sidebarOpen}
+                  setSidebarOpen={setSidebarOpen}
+                />
+              }
+            />
+          </Routes>
+        </Router>
       </main>
       <Footer />
     </div>
