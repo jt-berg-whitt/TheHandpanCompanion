@@ -1,33 +1,77 @@
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
-export default function Interviews({
-  interviewSidebarOpen,
-  setInterviewSidebarOpen,
-}) {
-  const toggleSidebar = () => {
-    setInterviewSidebarOpen(!interviewSidebarOpen);
+// Slugify chapters for matching anchors in sidebar & body
+function slugify(text) {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\- ]+/g, "")
+    .replace(/\s+/g, "-");
+}
 
-    // Optional: lock body scroll when sidebar is open
-    document.body.classList.toggle("sidebar-open", !interviewSidebarOpen);
-  };
+export default function Interviews({ sidebarOpen, setSidebarOpen }) {
+  const chapters = [
+    {
+      title: "interview1",
+    },
+  ];
+
+  console.log("sidebarOpen in INTERVIEWS: ", sidebarOpen);
 
   return (
     <div className="content">
       <div className="content-wrapper">
-        {/* SIDEBAR FOR INTERVIEWS NAVIGATION */}
-        <div className="sidebar-wrapper">
-          <nav className={`sidebar ${interviewSidebarOpen ? "open" : ""}`}>
-            <h2 className="index-title">Interviews</h2>
+        {/* SITE NAVIGATION */}
+        <Sidebar open={sidebarOpen}>
+          <div className="mobile-nav-only">
+            <h2 className="index-title">Navigation</h2>
             <div className="index-list">
-              <a href="#intro">Intro</a>
-              <a href="#test1">Test 1</a>
-              <a href="#test2">Test 2</a>
-              <a href="#test3">Test 3</a>
+              <a href="/" onClick={() => setSidebarOpen(false)}>
+                Home
+              </a>
+              <a href="/about" onClick={() => setSidebarOpen(false)}>
+                About
+              </a>
+              <a href="/book" onClick={() => setSidebarOpen(false)}>
+                Book
+              </a>
+              <a href="/interviews" onClick={() => setSidebarOpen(false)}>
+                Interviews
+              </a>
             </div>
-          </nav>
-        </div>
+          </div>
 
-        {/* INTERVIEWS CONTENT */}
+          {/* INTERVIEW CHAPTERS */}
+          <h2 className="index-title">Chapters</h2>
+          <div className="index-list">
+            {chapters.map((chapter, idx) => (
+              <div key={idx} className="sidebar-chapter-container">
+                <a
+                  href={`#${slugify(chapter.title)}`}
+                  onClick={() => setSidebarOpen(false)}>
+                  {chapter.title}
+                </a>
+                {chapter.subchapters && (
+                  <ul>
+                    {chapter.subchapters.map((sub, sidx) => (
+                      <li key={sidx}>
+                        <a
+                          href={`#${slugify(sub)}`}
+                          onClick={() => setSidebarOpen(false)}>
+                          {sub}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </Sidebar>
+
+        {/* MAIN INTERVIEW CONTENT */}
         <section aria-labelledby="interview-content" className="content-body">
           <h1 id="intro" className="chapter-title">
             Interviews
@@ -42,17 +86,7 @@ export default function Interviews({
             who has discovered the handpan and doesn't know where to begin...
           </p>
 
-          <p>
-            Within the coming pages, you'll find simple, easy-to-understand
-            answers to it all...
-          </p>
-
-          <p>
-            Read on and I'll show you that all the wondrous parts of this
-            instrument and its community are not nearly as complicated...
-          </p>
-
-          {/* Add the rest of your content here, keeping headings and paragraphs */}
+          {/* ... additional content here ... */}
         </section>
       </div>
     </div>

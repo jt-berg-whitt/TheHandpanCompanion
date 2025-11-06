@@ -1,30 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Header({
-  bookSidebarOpen,
-  setBookSidebarOpen,
-  interviewSidebarOpen,
-  setInterviewSidebarOpen,
-}) {
-  const location = useLocation();
-
-  const isActive =
-    location.pathname === "/book" ? bookSidebarOpen : interviewSidebarOpen;
-
+export default function Header({ sidebarOpen, setSidebarOpen }) {
   const toggleSidebar = () => {
-    if (location.pathname === "/book") {
-      setBookSidebarOpen(!bookSidebarOpen);
-    } else if (location.pathname === "/interviews") {
-      setInterviewSidebarOpen(!interviewSidebarOpen);
-    }
+    setSidebarOpen(!sidebarOpen);
   };
+  console.log("sidebarOpen in HEADER: ", sidebarOpen);
 
   return (
     <header className="header" role="banner">
       <div className="container site-title">
         <button
-          className={`sidebar-toggle ${isActive ? "active" : ""}`}
+          className={`sidebar-toggle ${sidebarOpen ? "active" : ""}`}
           onClick={toggleSidebar}>
           ☰
         </button>
