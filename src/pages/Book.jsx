@@ -25,7 +25,15 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
     },
     {
       title: "The Birth of the Hang",
-      subchapters: ["Reto Weber and the Hang"],
+      subchapters: [
+        "Reto Weber and the Hang",
+        "The Hang Family Tree",
+        "First Generation (2001-2005)",
+        "Second Generation (2006-2007)",
+        "Integral Hang (2008)",
+        "Free Integral Hang (2010)",
+        "The Hang in a (Nitrided) Nutshell",
+      ],
     },
   ];
 
@@ -59,6 +67,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
             {chapters.map((chapter, idx) => (
               <div key={idx} className="sidebar-chapter-container">
                 <a
+                  className="chapter"
                   href={`#${slugify(chapter.title)}`}
                   onClick={() => setSidebarOpen(false)}>
                   {chapter.title}
@@ -68,6 +77,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
                     {chapter.subchapters.map((sub, sidx) => (
                       <li key={sidx}>
                         <a
+                          className="subchapter"
                           href={`#${slugify(sub)}`}
                           onClick={() => setSidebarOpen(false)}>
                           {sub}
@@ -85,7 +95,9 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
         <div className="content-body">
           {/* //! the-history-of-the-handpan */}
           <section>
-            <h1 id="the-history-of-the-handpan">The History of the Handpan</h1>
+            <h1 id="the-history-of-the-handpan">
+              ~ The History of the Handpan ~
+            </h1>
             <p>
               In this first section of the book, I'll cover the unconventional
               origins of the steelpan, a story that spans continents, colonial
@@ -141,9 +153,9 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! the-steelpan-of-trinidad-and-tobago */}
           <section>
-            <h2 id="the-steelpan-of-trinidad-and-tobago">
-              The Steelpan of Trinidad and Tobago
-            </h2>
+            <h1 id="the-steelpan-of-trinidad-and-tobago">
+              ~ The Steelpan of Trinidad and Tobago ~
+            </h1>
             <p>
               The steelpan was born out of a centuries-long resistance to French
               imperialism and the transatlantic slave trade, both of which
@@ -153,12 +165,12 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
               street festival culture to Trinidad and Tobago. After the
               emancipation of enslaved Africans in 1834, there was a resurgence
               of African musical and dance customs, which fused with colonial
-              festival practices to form a new celebration known as
-              <span className="">Canboulay</span>, a harvest festival marked by
-              drumming and song. Canboulay became a vital outlet for the
-              continuation of African cultural expression and laid the
-              foundation for what would become calypso music, itself rooted in
-              West African kaiso traditions.
+              festival practices to form a new celebration known as{" "}
+              <em>Canboulay</em>, a harvest festival marked by drumming and
+              song. Canboulay became a vital outlet for the continuation of
+              African cultural expression and laid the foundation for what would
+              become calypso music, itself rooted in West African kaiso
+              traditions.
             </p>
             <p>
               Canboulay played a central role in the evolution of Trinidadian
@@ -277,14 +289,14 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
               From Trinidad & Tobago to the World
             </h2>
             <p>
-              The story begins in 1950 with Arthur Aldwyn <em>“Boscoe”</em>{" "}
-              Holder. His BBC show, <em>Bal Creole</em>, aired on June 30th,
-              1950 and was the first introduction of the steelpan to audiences
-              outside of Trinidad and Tobago. The{" "}
+              The global expansion began in 1950 with Arthur Aldwyn{" "}
+              <em>“Boscoe”</em> Holder. His BBC show, <em>Bal Creole</em>, aired
+              on June 30th, 1950 and was the first introduction of the steelpan
+              to audiences outside of Trinidad and Tobago. The{" "}
               <em>Trinidad All-Steelpan Percussion Orchestra</em> (
               <em>TASPO</em>), was formed by 12 of the best steelpan players
               from various Trinidadian steel bands to participate in the
-              Festival of Britain in 1951. The members are all legendary
+              Festival of Britain in 1951. The members were all legendary
               steelpan musicians: Winston
               <em>“Spree”</em> Simon (<em>Fascinators/Tokyo</em>), Ellie
               Mannette (<em>Invaders</em>), Anthony <em>“Tony”</em> Williams (
@@ -305,17 +317,17 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
               From that point on, there was a surge of steelpan makers appearing
               all over Europe and the Americas. Companies have been supplying
               steel bands with instruments in the ever-growing global community
-              ever since then. This is where companies like PANArt, creator of
-              the Hang, and Pantheon Steel, creator of the Halo and the first
-              North American handpans, or Sonobe in Tokyo, got their start as
-              musical instrument makers. Speaking of Hang and handpan, let's
-              discover how they began next!
+              ever since. This is where companies like PANArt, creator of the
+              Hang, and Pantheon Steel, creator of the Halo and the first North
+              American handpans, or Sonobe in Tokyo, got their start as musical
+              instrument makers. Speaking of Hang and handpan, let's discover
+              how they began next!
             </p>
           </section>
 
           {/* // ! the-birth-of-the-hang */}
           <section>
-            <h1 id="the-birth-of-the-hang">The Birth of the Hang</h1>
+            <h1 id="the-birth-of-the-hang">~ The Birth of the Hang ~</h1>
 
             {/* // ! reto-weber-and-the-hang */}
             <h2 id="reto-weber-and-the-hang">Reto Weber and the Hang</h2>
