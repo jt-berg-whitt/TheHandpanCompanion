@@ -4,6 +4,7 @@ import WebFont from "webfontloader";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -38,6 +39,8 @@ export default function App() {
     <div className="app">
       <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <main className="app-content">
+        <ScrollToTop />
+
         <Routes>
           {/* simple catch in case the person types "home" in the URL manually */}
           <Route
