@@ -18,8 +18,6 @@ export default function Interviews({ sidebarOpen, setSidebarOpen }) {
     },
   ];
 
-  console.log("sidebarOpen in INTERVIEWS: ", sidebarOpen);
-
   return (
     <div className="content">
       <div className="content-wrapper">

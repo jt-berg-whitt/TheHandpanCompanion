@@ -2,8 +2,6 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 
 export default function About({ sidebarOpen, setSidebarOpen }) {
-  console.log("sidebarOpen in ABOUT:", sidebarOpen);
-
   return (
     <div className="content">
       <div className="content-wrapper">
