@@ -1,5 +1,6 @@
 {
   "name": "thehandpan-companion-website",
+  "homepage": "https://jt-berg-whitt.github.io/TheHandpanCompanion",
   "version": "0.1.0",
   "private": true,
   "type": "module",
