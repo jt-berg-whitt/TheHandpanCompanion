@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Sidebar from "../components/Sidebar";
 
 export default function Home({ sidebarOpen, setSidebarOpen }) {
@@ -77,21 +77,21 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
             <h3>Quick links</h3>
             <ul>
               <li>
-                <a href="/about">
+                <Link to="/about">
                   <strong>About </strong>
-                </a>
+                </Link>
                 — Get to know the author and story behind the project
               </li>
               <li>
-                <a href="/book">
+                <Link to="/book">
                   <strong>Book </strong>
-                </a>
+                </Link>
                 — Read the book online, or download it in epub and pdf formats.
               </li>
               <li>
-                <a href="/interviews">
+                <Link to="/interviews">
                   <strong>Interviews </strong>
-                </a>
+                </Link>
                 — conversations with handpanists from around the world about
                 their experiences with and advice about the instrument.
               </li>
