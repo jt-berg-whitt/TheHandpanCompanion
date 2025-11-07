@@ -15,7 +15,7 @@ function slugify(text) {
 export default function Interviews({ sidebarOpen, setSidebarOpen }) {
   const chapters = [
     {
-      title: "Interviews",
+      title: "Test Interview",
     },
   ];
 
@@ -34,7 +34,7 @@ export default function Interviews({ sidebarOpen, setSidebarOpen }) {
           </div>
 
           {/* INTERVIEW CHAPTERS */}
-          <h2 className="index-title">Chapters</h2>
+          <h2 className="index-title">Interviews</h2>
           <div className="index-list">
             {chapters.map((chapter, idx) => (
               <div key={idx} className="sidebar-chapter-container">
