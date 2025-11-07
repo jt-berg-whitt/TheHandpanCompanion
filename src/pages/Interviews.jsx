@@ -13,7 +13,11 @@ function slugify(text) {
 }
 
 export default function Interviews({ sidebarOpen, setSidebarOpen }) {
-  const chapters = [{}];
+  const chapters = [
+    {
+      title: "Interviews",
+    },
+  ];
 
   return (
     <div className="content">

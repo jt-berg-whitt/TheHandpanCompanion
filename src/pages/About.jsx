@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import * as Router from "react-router-dom";
-console.log(Router);
 import Sidebar from "../components/Sidebar";
+import * as Router from "react-router-dom";
+
+console.log(Router);
 
 export default function About({ sidebarOpen, setSidebarOpen }) {
   return (
