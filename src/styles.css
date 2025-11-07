@@ -1,17 +1,18 @@
 /* Theme + layout variables */
 :root {
   --accent-dim: rgba(212, 175, 55, 0.12);
-  --bg: #050505; /* black */
+  --bg: #050505;
+  --red: #b91f1f;
   --footer-height: 48px;
   --gap: 16px;
-  --gold: #d4af37; /* gold accent */
+  --gold: #d4af37;
   --header-height: 64px;
-  --muted: #9aa3a0; /* muted text */
-  --panel: #072626; /* dark teal panel */
+  --muted: #9aa3a0;
+  --panel: #072626;
   --radius: 10px;
   --sidebar-width: 280px;
-  --teal: #00d4d4; /* accent dark teal */
-  --text: #eae6e1; /* primary text */
+  --teal: #00d4d4;
+  --text: #eae6e1;
   --transition: 240ms cubic-bezier(0.2, 0.9, 0.3, 1);
 }
 
@@ -52,6 +53,12 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+em {
+  display: inline;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
 /* App containers */
 .app {
   display: flex;
@@ -84,12 +91,6 @@ button:focus-visible {
   font-size: 2rem;
   scroll-margin-top: calc(var(--header-height) + 18px);
 }
-
-/* .app-content :target {
-  background: linear-gradient(90deg, rgba(212, 175, 55, 0.04), transparent 70%);
-  border-radius: 6px;
-  transition: box-shadow 280ms ease;
-} */
 
 /* Anchor indicators for headings */
 .app-content h2 .anchor-link {
@@ -135,12 +136,24 @@ button:focus-visible {
   flex: 1;
 }
 
+.crimson {
+  color: var(--red);
+}
+
 .donation {
   margin: 0;
 }
 .donation button {
   display: block;
   margin: 0 auto;
+}
+
+.golden {
+  color: var(--gold);
+}
+
+.physics-lists ul {
+  list-style: none;
 }
 
 /* Footer */
@@ -273,16 +286,11 @@ button:focus-visible {
 
 /* Scrollbar */
 .sidebar::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    rgba(212, 175, 55, 0.16),
-    rgba(14, 76, 75, 0.2)
-  );
-  border: 2px solid rgba(0, 0, 0, 0.15);
+  background: var(--gold);
   border-radius: 10px;
 }
 
