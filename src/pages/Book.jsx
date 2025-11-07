@@ -175,9 +175,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
         <div className="content-body">
           {/* //! the-history-of-the-handpan */}
           <section>
-            <h1 id="the-history-of-the-handpan">
-              ~ The History of the Handpan ~
-            </h1>
+            <h1 id="the-history-of-the-handpan">The History of the Handpan</h1>
             <p>
               In this first section of the book, I'll cover the unconventional
               origins of the steelpan, a story that spans continents, colonial
@@ -234,7 +232,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
           {/* //! the-steelpan-of-trinidad-and-tobago */}
           <section>
             <h1 id="the-steelpan-of-trinidad-and-tobago">
-              ~ The Steelpan of Trinidad and Tobago ~
+              The Steelpan of Trinidad and Tobago
             </h1>
             <p>
               The steelpan was born out of a centuries-long resistance to French
@@ -406,7 +404,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* // ! the-birth-of-the-hang */}
           <section>
-            <h1 id="the-birth-of-the-hang">~ The Birth of the Hang ~</h1>
+            <h1 id="the-birth-of-the-hang">~ The Birth of the Hang</h1>
 
             {/* // ! reto-weber-and-the-hang */}
             <h2 id="reto-weber-and-the-hang">Reto Weber and the Hang</h2>
@@ -702,7 +700,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
           {/* //! the-spread-of-the-hang-type-instrument */}
           <section>
             <h1 id="the-coming-of-the-age-of-the-handpan">
-              ~ The Age of the Handpan ~
+              The Age of the Handpan
             </h1>
             <h2 id="the-spread-of-the-hang-type-instrument">
               The Spread of the Hang-type Instrument
@@ -905,7 +903,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
               as far as public announcements show, who by the same public
               records on YT, still holds the world record for lowest ding on a
               53cm, fully extended C2 Minor 16 layout. Arcana Handpan now holds
-              the record for the largest handpans, reaching C2 with their ~76cm
+              the record for the largest handpans, reaching C2 with their76cm
               “Goliath” models, most of which remain in their private
               collection.
             </p>
@@ -1385,9 +1383,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! the-physics-of-the-handpan */}
           <section>
-            <h1 id="the-physics-of-the-handpan">
-              ~ The Physics of the Handpan ~
-            </h1>
+            <h1 id="the-physics-of-the-handpan">The Physics of the Handpan</h1>
             <p>
               This section will cover how handpans are made from beginning to
               end, the differences between raw, carbon, nitrided and stainless
@@ -2163,10 +2159,10 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
               once.
             </p>
             <p>
-              Arcana have built several “Goliath pans” at ~76cm, holding the
-              title for largest handpans in the world, with multiple D2, C#2 and
-              C2 layouts like Amara, Aegean, Hijaz and Klezmara. These sport a
-              full array of 9 top notes and up to 12 bottom notes. Leaf Sound
+              Arcana have built several “Goliath pans” at76cm, holding the title
+              for largest handpans in the world, with multiple D2, C#2 and C2
+              layouts like Amara, Aegean, Hijaz and Klezmara. These sport a full
+              array of 9 top notes and up to 12 bottom notes. Leaf Sound
               Sculptures has created mini shells that hold a single, very low
               ding, ranging down to the C2, of which I would love to see a full
               octave set someday.
@@ -2272,9 +2268,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! theory-of-the-handpan */}
           <section>
-            <h1 id="the-theory-of-the-handpan">
-              ~ The Theory of the Handpan ~
-            </h1>
+            <h1 id="the-theory-of-the-handpan">The Theory of the Handpan</h1>
 
             <p>
               When discussing the theory of the handpan, what I specifically
@@ -2570,7 +2564,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! handpan-scale-glossary */}
           <section>
-            <h1 id="handpan-scale-glossary">~ Handpan Scale Glossary ~</h1>
+            <h1 id="handpan-scale-glossary">~ Handpan Scale Glossary</h1>
             <p>
               This section lists the typical handpan scales you can order today
               from virtually any maker. Outside of this list there are a
@@ -2627,7 +2621,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //? minor-scales */}
           <section>
-            <h1 id="minor-scales">~ Minor Scales ~</h1>
+            <h1 id="minor-scales">~ Minor Scales</h1>
             <p>
               I will begin with the minor scales since people buy this vastly
               more often than major and harmonic minor scales. Also, apologies
@@ -2818,7 +2812,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //? major-scales */}
           <section>
-            <h1>~ Major Scales ~</h1>
+            <h1>~ Major Scales</h1>
             <p>
               Quick note: I have to be honest that the majority of these layouts
               all sound the same and don't give me drastically different
@@ -2961,7 +2955,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! harmonic-minor-scales */}
           <section>
-            <h1>~ Harmonic Minor Scales ~</h1>
+            <h1>~ Harmonic Minor Scales</h1>
           </section>
 
           {/* //! hijaz */}
@@ -3066,7 +3060,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
           {/* //! practical-notes-for-the-aspiring-buyer */}
           <section>
             <h1 id="practical-notes-for-the-aspiring-buyer">
-              ~ Practical Notes for the Aspiring Buyer ~
+              Practical Notes for the Aspiring Buyer
             </h1>
             <p>
               This section of the book is simply going to be bulleted points to
@@ -3365,7 +3359,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! closing-words */}
           <section>
-            <h1 id="closing-words">~ Closing Words ~</h1>
+            <h1 id="closing-words">~ Closing Words</h1>
             <p>
               Writing this book has been a very long and arduous process and I
               think it would've taken half the time if I had the knowledge I
