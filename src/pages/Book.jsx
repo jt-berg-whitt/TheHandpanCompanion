@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 
 // Slugify chapters for matching anchors in sidebar & body
@@ -10,7 +11,6 @@ function slugify(text) {
     .replace(/[^\w\- ]+/g, "")
     .replace(/\s+/g, "-");
 }
-
 
 export default function Book({ sidebarOpen, setSidebarOpen }) {
   const chapters = [
@@ -135,18 +135,9 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
           <div className="mobile-nav-only">
             <h2 className="index-title">Navigation</h2>
             <div className="index-list">
-              <a href="/" onClick={() => setSidebarOpen(false)}>
-                Home
-              </a>
-              <a href="/about" onClick={() => setSidebarOpen(false)}>
-                About
-              </a>
-              <a href="/book" onClick={() => setSidebarOpen(false)}>
-                Book
-              </a>
-              <a href="/interviews" onClick={() => setSidebarOpen(false)}>
-                Interviews
-              </a>
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/interviews">Interviews</Link>
             </div>
           </div>
 
