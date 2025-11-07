@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import * as Router from "react-router-dom";
+console.log(Router);
 import Sidebar from "../components/Sidebar";
 
 export default function About({ sidebarOpen, setSidebarOpen }) {
