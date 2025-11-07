@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import Sidebar from "../components/Sidebar";
 
 // Slugify chapters for matching anchors in sidebar & body
@@ -14,11 +13,7 @@ function slugify(text) {
 }
 
 export default function Interviews({ sidebarOpen, setSidebarOpen }) {
-  const chapters = [
-    {
-      title: "interview1",
-    },
-  ];
+  const chapters = [{}];
 
   return (
     <div className="content">
@@ -62,22 +57,17 @@ export default function Interviews({ sidebarOpen, setSidebarOpen }) {
           </div>
         </Sidebar>
 
-        {/* MAIN INTERVIEW CONTENT */}
+        {/*  INTERVIEW CONTENT */}
         <section aria-labelledby="interview-content" className="content-body">
           <h1 id="intro" className="chapter-title">
             Interviews
           </h1>
 
-          <h2 id="what-is" className="subchapter-title">
-            What is The Handpan Companion?
-          </h2>
-
           <p>
-            I hope that my book will serve as an accessible guidebook for anyone
-            who has discovered the handpan and doesn't know where to begin...
+            The book is up, but I still need to manually add in all the
+            interviews, HTML-wrapped. Give me a few weeks to get them all up
+            here slowly, but they will be here by the end of the year for sure!
           </p>
-
-          {/* ... additional content here ... */}
         </section>
       </div>
     </div>
