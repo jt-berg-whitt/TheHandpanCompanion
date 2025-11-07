@@ -43,12 +43,7 @@ export default function App() {
 
         <Routes>
           {/* simple catch in case the person types "home" in the URL manually */}
-          <Route
-            path="/home"
-            element={<Navigate to="/" replace />}
-            sidebarOpen={sidebarOpen}
-            setSidebarOpen={setSidebarOpen}
-          />
+          <Route path="/home" element={<Navigate to="/" replace />} />
           <Route
             path="/"
             element={
