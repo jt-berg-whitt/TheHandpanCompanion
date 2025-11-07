@@ -404,7 +404,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* // ! the-birth-of-the-hang */}
           <section>
-            <h1 id="the-birth-of-the-hang">~ The Birth of the Hang</h1>
+            <h1 id="the-birth-of-the-hang">The Birth of the Hang</h1>
 
             {/* // ! reto-weber-and-the-hang */}
             <h2 id="reto-weber-and-the-hang">Reto Weber and the Hang</h2>
@@ -2564,7 +2564,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! handpan-scale-glossary */}
           <section>
-            <h1 id="handpan-scale-glossary">~ Handpan Scale Glossary</h1>
+            <h1 id="handpan-scale-glossary">Handpan Scale Glossary</h1>
             <p>
               This section lists the typical handpan scales you can order today
               from virtually any maker. Outside of this list there are a
@@ -2621,7 +2621,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //? minor-scales */}
           <section>
-            <h1 id="minor-scales">~ Minor Scales</h1>
+            <h1 id="minor-scales">Minor Scales</h1>
             <p>
               I will begin with the minor scales since people buy this vastly
               more often than major and harmonic minor scales. Also, apologies
@@ -2812,7 +2812,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //? major-scales */}
           <section>
-            <h1>~ Major Scales</h1>
+            <h1>Major Scales</h1>
             <p>
               Quick note: I have to be honest that the majority of these layouts
               all sound the same and don't give me drastically different
@@ -2955,7 +2955,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! harmonic-minor-scales */}
           <section>
-            <h1>~ Harmonic Minor Scales</h1>
+            <h1>Harmonic Minor Scales</h1>
           </section>
 
           {/* //! hijaz */}
@@ -3359,7 +3359,7 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! closing-words */}
           <section>
-            <h1 id="closing-words">~ Closing Words</h1>
+            <h1 id="closing-words">Closing Words</h1>
             <p>
               Writing this book has been a very long and arduous process and I
               think it would've taken half the time if I had the knowledge I
