@@ -24,6 +24,22 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
             <h3 id="home-heading">
               Welcome to The Handpan Companion's home page!
             </h3>
+            <em>
+              <p>
+                Note: This page is (temporarily, for accesrsibility's sake)
+                built on ReactJS as a SPA (Single Page App). This means if you
+                try to refresh or directly link to a page (like copy/paste into
+                the address bar or a text message), it will 404.
+              </p>
+              <p>
+                For now, please just use/share{" "}
+                <a href="https://jt-berg-whitt.github.io/TheHandpanCompanion/">
+                  this link
+                </a>{" "}
+                (or copy the URL above on this homepage!) and then navigate the
+                website from t/here! Thanks and enjoy!
+              </p>
+            </em>
           </section>
 
           <section>
