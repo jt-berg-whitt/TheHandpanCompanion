@@ -29,12 +29,12 @@ export default function About({ sidebarOpen, setSidebarOpen }) {
 
           <p>
             The story of why I began this endeavor is funny. Back in December
-            2022, a crypto bro in a café alleged,
+            2022, a crypto bro in a café alleged,{" "}
             <em>
               “AI is so powerful now that ChatGPT can write entire e-books for
               you to sell as passive income on Amazon and you can have passive
               income to do whatever you want.”
-            </em>
+            </em>{" "}
             He never returned to the co-working café, so he obviously struck
             gold selling e-books. Meanwhile, I tested his ridiculous idea. When
             I thought about what kind of book I'd write, and being as

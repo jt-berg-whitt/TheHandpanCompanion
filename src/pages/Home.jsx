@@ -90,7 +90,7 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
             </ul>
           </section>
 
-          <section className="donation">
+          {/* <section className="donation">
             <p>
               If you would like to donate to the project, please use the button
               below to access the secure payment portal.
@@ -101,7 +101,7 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
               well as site upkeep.
             </p>
             <button>Click here to donate to The Handpan Companion!</button>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>
