@@ -26,10 +26,10 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
             </h3>
             <em>
               <p>
-                Note: This page is (temporarily, for accesrsibility's sake)
-                built on ReactJS as a SPA (Single Page App). This means if you
-                try to refresh or directly link to a page (like copy/paste into
-                the address bar or a text message), it will 404.
+                Note: This page is (temporarily, for accessibility's sake) built
+                on ReactJS as a SPA (Single Page App). This means if you try to
+                refresh or directly link to a page (like copy/paste into the
+                address bar or a text message), it will 404.
               </p>
               <p>
                 For now, please just use/share{" "}

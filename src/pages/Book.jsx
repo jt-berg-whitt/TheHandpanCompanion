@@ -184,8 +184,16 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
               <h1 id="the-history-of-the-handpan">
                 The History of the Handpan
               </h1>
-              <a href="/The Handpan Companion.epub">Download book as EPUB</a>
-              <a href="/The Handpan Companion.pdf">Download book as PDF</a>
+              <a
+                href="https://drive.google.com/file/d/1hcb2bYTSjPrCEcVadwTaRH4dHhqpV2Sa/view?usp=sharing"
+                download>
+                Download book as EPUB
+              </a>
+              <a
+                href="https://drive.google.com/file/d/16lN5xBhSuKc8r-HiCUb2gHnjmFzElFXw/view?usp=sharing"
+                download>
+                Download book as PDF
+              </a>
             </div>
             <p>
               In this first section of the book, I'll cover the unconventional
