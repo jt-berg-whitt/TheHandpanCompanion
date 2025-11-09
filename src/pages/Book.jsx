@@ -175,7 +175,18 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
         <div className="content-body">
           {/* //! the-history-of-the-handpan */}
           <section>
-            <h1 id="the-history-of-the-handpan">The History of the Handpan</h1>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                textAlign: "center",
+              }}>
+              <h1 id="the-history-of-the-handpan">
+                The History of the Handpan
+              </h1>
+              <a href="/The Handpan Companion.epub">Download book as EPUB</a>
+              <a href="/The Handpan Companion.pdf">Download book as PDF</a>
+            </div>
             <p>
               In this first section of the book, I'll cover the unconventional
               origins of the steelpan, a story that spans continents, colonial
