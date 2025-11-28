@@ -184,14 +184,10 @@ export default function Book({ sidebarOpen, setSidebarOpen }) {
               <h1 id="the-history-of-the-handpan">
                 The History of the Handpan
               </h1>
-              <a
-                href="https://drive.google.com/file/d/1hcb2bYTSjPrCEcVadwTaRH4dHhqpV2Sa/view?usp=sharing"
-                download>
+              <a href="https://drive.google.com/file/d/1hcb2bYTSjPrCEcVadwTaRH4dHhqpV2Sa/view?usp=sharing">
                 Download book as EPUB
               </a>
-              <a
-                href="https://drive.google.com/file/d/16lN5xBhSuKc8r-HiCUb2gHnjmFzElFXw/view?usp=sharing"
-                download>
+              <a href="https://drive.google.com/file/d/16lN5xBhSuKc8r-HiCUb2gHnjmFzElFXw/view?usp=sharing">
                 Download book as PDF
               </a>
             </div>

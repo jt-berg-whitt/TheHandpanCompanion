@@ -5,7 +5,6 @@ export default function Header({ sidebarOpen, setSidebarOpen }) {
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
-  console.log("sidebarOpen in HEADER: ", sidebarOpen);
 
   return (
     <header className="header" role="banner">
