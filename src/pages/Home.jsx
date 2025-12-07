@@ -187,13 +187,15 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
                 textAlign: "center",
               }}>
               <h2>Welcome to The Handpan Companion's home page!</h2>
-              <div id="download-links" className="content-body">
+              <div aria-labelledby="download-links" id="download-links">
                 <a href="https://drive.google.com/file/d/1hcb2bYTSjPrCEcVadwTaRH4dHhqpV2Sa/view?usp=sharing">
                   Download book as EPUB
                 </a>
+                <br></br>
                 <a href="https://drive.google.com/file/d/16lN5xBhSuKc8r-HiCUb2gHnjmFzElFXw/view?usp=sharing">
                   Download book as PDF
                 </a>
+
                 {/* <section className="donation">
                   <p>
                     If you would like to donate to the project, please use the
@@ -212,6 +214,7 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
             </div>
           </section>
 
+          {/* //! ABOUT PAGE CONTENT THAT GOT MOVED */}
           <section>
             <h2 id="what-is-the-handpan-companion" className="subchapter-title">
               What is The Handpan Companion?
@@ -251,9 +254,7 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
             </p>
           </section>
 
-          {/* //! ABOUT PAGE CONTENT THAT GOT MOVED */}
-
-          <section aria-labelledby="book-content">
+          <section>
             <h2 id="why-is-the-handpan-companion" className="subchapter-title">
               <em>Why</em> is The Handpan Companion?
             </h2>
@@ -385,7 +386,7 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
 
           {/* //! BOOK PAGE CONTENT THAT GOT MOVED TOO */}
 
-          <div className="content-body">
+          <div aria-labelledby="book-content">
             {/* //! the-history-of-the-handpan */}
             <section>
               <div
@@ -3151,7 +3152,7 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
             {/* //! oxalis-ta */}
             <section>
               <h2 id="oxalis">
-                Oxalis/ta (Pentatonic/Hexatonic Ionian - Omits 7°/Adds 4°)
+                Oxalis/ta (Pentatonic-Hexatonic Ionian - Omits 7°/Adds 4°)
               </h2>
               <p>
                 This particular layout has a very dreamy and introspective
