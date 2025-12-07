@@ -192,6 +192,7 @@ export default function Home({ sidebarOpen, setSidebarOpen }) {
                   Download book as EPUB
                 </a>
                 <br></br>
+                <br></br>
                 <a href="https://drive.google.com/file/d/16lN5xBhSuKc8r-HiCUb2gHnjmFzElFXw/view?usp=sharing">
                   Download book as PDF
                 </a>
