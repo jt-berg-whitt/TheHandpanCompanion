@@ -28,8 +28,6 @@ export default function Interviews({ sidebarOpen, setSidebarOpen }) {
             <h2 className="index-title">Navigation</h2>
             <div className="index-list">
               <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/book">Book</Link>
             </div>
           </div>
 

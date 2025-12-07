@@ -29,20 +29,6 @@ export default function Header({ sidebarOpen, setSidebarOpen }) {
             </li>
             <li>
               <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? "active" : "")}>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/book"
-                className={({ isActive }) => (isActive ? "active" : "")}>
-                Book
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/interviews"
                 className={({ isActive }) => (isActive ? "active" : "")}>
                 Interviews

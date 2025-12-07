@@ -7,8 +7,6 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Book from "./pages/Book";
 import Interviews from "./pages/Interviews";
 
 export default function App() {
@@ -36,7 +34,7 @@ export default function App() {
   }
 
   return (
-    <div className="app">
+    <div className="app" id="introduction">
       <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <main className="app-content">
         <ScrollToTop />
@@ -48,21 +46,6 @@ export default function App() {
             path="/"
             element={
               <Home sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <About
-                sidebarOpen={sidebarOpen}
-                setSidebarOpen={setSidebarOpen}
-              />
-            }
-          />
-          <Route
-            path="/book"
-            element={
-              <Book sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
             }
           />
           <Route
